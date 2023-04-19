@@ -1,0 +1,15 @@
+{
+  "name": "no1sePLUS",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "This extension allows you to load no1sePLUS into chatGPT",
+  "content_scripts": [
+    {
+      "matches": ["https://chat.openai.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ]
+}
